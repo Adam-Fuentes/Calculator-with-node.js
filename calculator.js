@@ -11,6 +11,7 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
+//esucha y si se pasa algo por / en post salta
 app.post("/", function(req, res){//con el body parser tenemos ahora el body con los post pasados anteriormente
 
     var result = Number(req.body.num1) + Number(req.body.num2);
